@@ -1,6 +1,6 @@
-# 🧩 Module 07: Working with Data
+# 🧰 Module 07 – Working with Data
 
-Welcome to the data-wrangling dojo. You've mastered the environment (Jupyter, files, Markdown, plotting, timing)... now it's time to bend raw data to your will. This module introduces you to Python's and Pandas' core data structures, and teaches you how to load, explore, filter, and clean real-world datasets.
+This module introduces core Python and Pandas tools for manipulating, cleaning, and inspecting datasets. It's the messy middle of any data science project—and now you're equipped to handle it like a pro.
 
 ---
 
@@ -16,9 +16,8 @@ By the end of this module, you should be able to:
 - Filter and sort data using multiple strategies
 - Prepare a dataset for visualization or modeling
 
----
 
-## 📚 Notebooks
+## 🗂 Notebook Overview
 
 | Notebook                                | Description                                        |
 | --------------------------------------- | -------------------------------------------------- |
@@ -33,21 +32,37 @@ By the end of this module, you should be able to:
 
 ---
 
-## 🧠 Assessment
+## 📦 Module Recap
 
-- `Working_with_Data_Quiz.ipynb` – Short quiz to reinforce key concepts
-- `glossary.md` – Terms, functions, and expressions used in this module
+Data doesn’t come clean and labeled like a science fair project. This module guided you through the messy, glorious reality of **data wrangling** in Python using native tools and Pandas.
+
+By now, you should feel confident:
+
+- Recognizing Python's core data containers (`list`, `tuple`, `dict`, `set`)
+- Working with Pandas `Series` and `DataFrames`
+- Loading CSVs, exploring structure, and identifying issues
+- Cleaning, transforming, and filtering datasets
+- Writing your cleaned data back out for analysis or sharing
+
+---
+
+## 🎯 Key Takeaways
+
+- **Missing values** are common and must be handled early to avoid broken logic later.
+- **Data types** matter: just because it looks like a number doesn’t mean Python agrees.
+- **Column operations** let you build new insights and features from existing ones.
+- **Filtering and sorting** are the core tools of exploratory data analysis (EDA).
+- Pandas is powerful, but _you_ are the one asking the questions and defining the structure.
 
 ---
 
 ## 🗂️ Suggested Datasets
 
 - Titanic Dataset (`seaborn.load_dataset("titanic")`)
-- Pokémon Stats (`pokemon.csv`)
-- UFO Sightings (`ufo.csv`)
+- Pokémon Stats (`data/pokemon.csv`)
+- UFO Sightings (`data/ufo.csv`)
 - Iris Dataset (`seaborn.load_dataset("iris")`)
-
-Feel free to swap in a dataset that's thematically fun or relevant to your students.
+- Students (`data/students.csv` or `data/students.json`)
 
 ---
 
@@ -57,6 +72,10 @@ Feel free to swap in a dataset that's thematically fun or relevant to your stude
 - Use `.copy()` when slicing to avoid `SettingWithCopyWarning`.
 - Use `%timeit` to compare loops vs. vectorized filters.
 
----
+## 🧪 Up Next: Analyzing & Visualizing Data
 
-Rubber chickens optional. Pandas mandatory.
+Now that you've got your data in shape, it's time to ask questions of it. Coming up:
+
+- Aggregation and grouping
+- Basic statistics
+- Visualizing data with Matplotlib and Seaborn
